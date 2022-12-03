@@ -1,16 +1,16 @@
 # runit-swap
 Script for auto-creation and mounting of: zram swaps, swap files (through loop) devices, swap partitions.
-It is configurable in /etc/runit/swap.conf.
+It is configurable in /etc/runit-swap.conf.
 Source:
 ```
-/etc/runit/swap.conf
+/etc/runit-swap.conf
 /usr/bin/runit-swap
-/etc/sv/swap/run
-/etc/sv/swap/finish
+/etc/runit/sv/swap/run
+/etc/runit/sv/swap/finish
 ```
 Using:
 ```
-# ln -s /etc/sv/swap /var/services
+# ln -s /etc/runit/sv/swap /run/runit/service
 ```
 
 Note:
