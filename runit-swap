@@ -35,7 +35,7 @@ ram_size=$(awk '/MemTotal:/ { print $2 }' /proc/meminfo)
 
 WORK_DIR=/var/run/runit/swap
 TMPDIR=$WORK_DIR
-CONF=/etc/runit/swap.conf
+CONF=/etc/runit-swap.conf
 B_CONF=$WORK_DIR/swap.conf
 
 case "$1" in
